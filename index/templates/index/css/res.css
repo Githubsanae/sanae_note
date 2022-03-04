@@ -1,0 +1,180 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+/* zocial */
+
+[class*="zocial-"]:before {
+    font-family: "zocial", sans-serif;
+}
+body {
+    background:url(../picture/jiong.jpg) no-repeat;
+    background-size: 150%;
+    background-position-x:-300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+}
+#form-block {
+    width: 850px;
+    height: 600px;
+    /* margin: 0 auto; */
+    /* margin-top: 50px; */
+    border-radius: 10px;
+    background: #FFFEFE;
+    clear: both;
+    box-shadow: black 0px 0px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+#form-block--left {
+    display: inline-block;
+    float: left;
+    position: relative;
+    height: auto;
+    width: 550px;
+    padding-top: 20px;
+}
+#form-block--right {
+    display: inline-block;
+    float: right;
+    position: relative;
+    height: 100%;
+    width: 300px;
+}
+#left-content {
+    text-align: left;
+    width: calc(100% - 60px);
+    height: auto;
+    padding: 30px;
+}
+#left-content h1 {
+    position: inherite;
+    display: inline-block;
+    width: 100%;
+    color: #414141;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+#left-content h2 {
+    position: inherite;
+    display: inline-block;
+    width: 100%;
+    color: #939AA8;
+    font-family: "lato", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.small-text {
+    position: inherite;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #999FAD;
+    line-height: 25px;
+    display: inline-block;
+}
+#buttons {
+    position: relative;
+    display: block;
+    width: calc($block + 30px);
+    height: auto;
+    margin-top: 30px;
+}
+.signup-button {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    position: inherite;
+    background-color: #FFFEFE;
+    border: 1px solid #EAEAEA;
+    color: #414141;
+    padding: 15px 70px;
+    margin: 10px 0px;
+}
+.signup-button:hover {
+    cursor: pointer;
+    box-shadow: 3px 7px 20px #D3D3D3;
+    transform: scale(1.03);
+}
+.signup-button span {
+    font-family: "Lato", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.icon {
+    display: inline-block;
+    font-size: 18px;
+    position: absolute;
+    left: 50px;
+    margin-top: -3px;
+}
+.zocial-googleplus {
+    color: #D24B40;
+}
+.zocial-facebook {
+    color: #425693;
+}
+.zocial-twitter {
+    color: #4E93F9;
+}
+hr {
+    display: inline-block;
+    position: inherite;
+    margin: 10px 0;
+    color: #939AA8;
+    opacity: 0.4;
+    width: 100%;
+}
+.bottom-text {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #414141;
+    padding: 20px 30px;
+}
+.email-link {
+    position: absolute;
+    right: 40px;
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #64C900;
+}
+.email-link:hover {
+    color: #6AD500;
+    font-weight: 600;
+}
+#form-block--right img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #939AA8;
+    border-radius: 0px 10px 10px 0px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+.copyright {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 8px;
+    text-align: center;
+    color: #C0C0C0;
+    margin-top: 7px;
+}
+.copyright a {
+    color: #D0D0D0;
+    font-weight: 400;
+    text-decoration: none;
+}
+.copyright a:hover {
+    color: #DEDEDE;
+    font-weight: 600;
+    
+}

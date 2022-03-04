@@ -1,0 +1,318 @@
+.main{
+    width: 940px;
+    height: 453px;
+    margin-left: 260px;
+}
+.focus,
+.newsflash{
+    margin-top: 10px;
+    height: 453px;
+}
+.focus{
+    float: left;
+    width: 720px;
+}
+.focus img{
+    display: inline-block;
+    width: 720px;
+    height: 453px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+.newsflash{
+    float: right;
+    width: calc((940 - 730)*1px)
+}
+.newsflash .news_head{
+    height: 25px;
+    border: 1px solid gray;
+}
+.newsflash .news_head h4{
+    font-size: 12px;
+    line-height: 25px;
+}
+.newsflash .news_head h4:first-child{
+    float: left;
+    margin-left: 10px;
+}
+.newsflash .news_head h4:last-child{
+    float: right;
+    margin-right: 10px;
+}
+.newsflash .news ul li{
+    font-size: 12px;
+    margin: 2px 0;
+    margin-left: 10px;
+    /* overflow: hidden; */
+/*     white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+.newsflash .news ul {
+    border: 1px solid gray;
+    margin-top: -1px;
+    padding: 10px 0;
+}
+.newsflash a{
+    color: #000;
+    transition: all .05s ease-in-out .01s;
+    position: relative;
+}
+.newsflash ul li a:hover{
+    color: rgb(143, 192, 239);
+}
+.newsflash ul li a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    transition:  all .5s cubic-bezier(0.04, 0.66, 0.44, 0.97) .01s;
+    transform: scale3d(0,1,1);
+    transform-origin: 50% 0;
+    background-color:rgb(143, 192, 239);
+}
+.newsflash ul li a:hover::after{
+    transform: scale3d(1,1,1);
+}
+
+.news_blank{
+    float: right;
+    width: calc((940 - 730)*1px);
+    border: 1px solid gray;
+    border-bottom: 0px;
+    border-top: 0px;
+    box-sizing: border-box;
+    overflow:hidden;
+
+}
+.news_blank ul{
+    width: 220px;
+
+}
+.news_blank ul li{
+    float: left;
+    width: 53.2px;
+    height:80px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    box-sizing: border-box;
+    margin-left: -1px;
+    text-align: center;
+    
+}
+.news_blank ul li a{
+    align-content:center;
+    font-family: 'icomoon';
+    line-height: 80px;
+}
+.news_blank ul li a:after{
+    margin-left:18.09px;
+}
+.news_blank ul li>a:before{
+    font-family: 'icomoon';
+    line-height: 80px;
+}
+.news_blank ul li:first-child a:before{
+    content:'\e911';
+}
+.news_blank ul li:nth-child(2) a:before{
+    content:'\e912';
+}
+.news_blank ul li:nth-child(3) a:before{
+    content:'\e913';
+}
+.news_blank ul li:nth-child(4) a:before{
+    content:'\e914';
+}
+.news_blank ul li:nth-child(5) a:before{
+    content:'\e915';
+}
+.news_blank ul li:nth-child(6) a:before{
+    content:'\e916';
+}
+.news_blank ul li:nth-child(7) a:before{
+    content:'\e917';
+}
+.news_blank ul li:nth-child(8) a:before{
+    content:'\e918';
+}
+.news_blank ul li:nth-child(9) a:before{
+    content:'\e919';
+}
+.news_blank ul li:nth-child(10) a:before{
+    content:'\e920';
+}
+.news_blank ul li:nth-child(11) a:before{
+    content:'\e921';
+}
+.news_blank ul li:nth-child(12) a:before{
+    content:'\e929';
+}
+
+.news_img img{
+    width:calc((940 - 730)*1px);
+    height: 55px;
+    object-fit: cover;
+    object-position: 0 -28px;
+}
+
+/* recom开始 */
+.recom{
+    margin-top: 32px;
+    height: 200px;
+}
+.recom .recom_time{
+    float: left;
+    width: 250px;
+    height: 200px;
+    background-color: rgb(91, 82, 79);
+    position:absolute；
+    /* line-height: 200px; */
+}
+.recom .recom_time::after{
+    top: 20px;
+    left: calc((250 / 2 - 150)*1px);
+    position: relative;
+    content:'\ed6b';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: white;
+}
+.recom .recom_time::before{
+    top: 60px;
+    left:calc(50% - 50px);
+    position: relative;
+    content:'今日推荐';
+    color:white;
+    font-size: 25px;
+}
+.recom .recom_box{
+    float: left;
+    height: 200px;
+    width:950px;
+    background-color: #e7eae7;
+}
+.recom .recom_item{
+    float: left;
+    width:calc((950 / 4)*1px);
+    height:180px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.recom .recom_item:nth-child(-n+3){
+    border-right: 1px solid rgba(124, 124, 124, 0.349);
+}
+.recom .recom_item img{
+    width: 100%;
+    height: 100%;
+    transition: all .1s ease-in-out;
+
+}
+.recom .recom_item img:hover{
+    transform-origin: center center;
+    transform: scale(1.2,1.2);
+    background-color: #00000052;
+    box-shadow: black 0 0 15px 0px;
+}
+/* recom结束 */
+/* 猜你喜欢模块strat */
+.like{
+    height: 220px;
+    margin-top:20px;
+}
+.like .like_head{
+    height: 20px;
+    line-height: 20px;
+}
+.like .like_head::after{
+    content: '换一换 \ee40';
+    float: right;
+    font-family: 'icomoon';
+}
+.like .like_head:hover::after{
+    color: red;
+}
+.like_body{
+    width:200px;
+    height: 200px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+}
+.like_body img{
+    width:150px;
+    margin-top: 10px;
+    transition: all .1s ease-in-out;
+
+}
+.like_body img:hover{
+    transform-origin: center center;
+    transform: scale(1.2,1.2);
+    background-color: #00000052;
+    box-shadow: black 0 5px 15px 0px;
+}
+/* 猜你喜欢模块end */
+/* 幻想乡卖场strat */
+    .uriba_box{
+        border-bottom: 1px solid;
+    }
+    .uriba_hd {
+        margin-top: 20px;
+        height: 30px;
+        border-bottom: 1px solid;
+    }
+    .uriba_hd div{
+        float: left;
+        line-height: 30px;
+        text-indent: 25px;
+        font-weight: bold;
+    }
+    .uriba_hd ul li{
+        float: right;
+        padding: 0 10px;
+    } 
+    .uriba_hd ul li:nth-child(n+2){
+        border-right: 1px solid;
+    }
+    .uriba_hd ul li:first-child{
+        margin-right: 15px;
+    }
+
+    .uriba_box .uriba_box_first{
+        margin-top: 10px;
+        height: 360px;
+    }
+    .uriba_box_first .uriba_hakure{
+        float: left;
+        margin-left: 40px;
+        width: 346px;
+        height:360px;
+    }
+    .uriba_box_first .uriba_hakure p,
+    .uriba_box_first .uriba_hakure div{
+        color: #fc8c7e;
+    }
+    .uriba_box_first .uriba_hakure div{
+        font-family: 'icomoon';
+        text-align: center;
+        margin-top: 90px;
+        font-size: 700%;
+        transition:all .8s ease-in-out;
+    }
+    .uriba_box_first .uriba_hakure div:hover{
+    transform:translateY(-10px);
+    }
+    .uriba_box_first .uriba_hakure p{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 200%;
+        font-weight: bold;
+    }
+    
+/* 幻想乡卖场end */

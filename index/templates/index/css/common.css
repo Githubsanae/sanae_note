@@ -1,0 +1,282 @@
+/* 快捷导航模块开始 */
+.shortcut{
+    background-color: #f1f1f1;
+    height: 31px;
+    line-height: 31px;
+}
+.fr ul li{
+    float: left;
+}
+.fr ul li:nth-child(even){
+    width: 1px;
+    height: 12px;
+    background-color: black;
+    margin: 9px 15px;
+}
+.arrow_icon::after{
+    content: "\e903";
+    font-family: 'icomoon';
+    color: #fc2;
+    margin-left: 6px;
+}
+/* 快捷导航模块结束 */
+/* 头部开始 */
+.head{
+    position:relative;
+    height: 120px;
+}
+.logo{
+    margin-top: 2.5px;
+    float: left;
+    width: 250px;
+    height: 115px;
+}
+.logo a{
+    display: block;
+    width: 250px;
+    height: 115px;
+    background-image: url(../picture/logo.png);
+    /* background-position: 0px -19px; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+.bar input{
+    float: left;
+    box-sizing: border-box;
+    width: 600px;
+    height: 30px; 
+    border: 0px ;
+    outline: none;
+    font-size: 20px;
+}
+.bar a{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: darkred;
+    color:white;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+.bar{
+    position:absolute;
+    left: 50%;
+    margin-left: -320px;
+    top: 50%;
+    margin-top: -15px;
+    height: 30px;
+    border: 2px solid darkred;
+}
+.head_hot{
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: 20px;
+    width: 690px;
+}
+.head_hot ul li{
+    float: left;
+    margin-right: 30px;
+}
+.head_hot ul a{
+    position: relative;
+    color: black;
+    transition: all .1s ease-in-out .01s
+}
+.head_hot ul a::after,
+.head_hot ul li:first-child>a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    transition:  all .5s cubic-bezier(0, 0.41, 0.06, 0.99) .01s;
+    transform: scale3d(0,1,1);
+    transform-origin: 50% 0;
+}
+.head_hot ul a::after{
+    background-color:rgb(137, 193, 73);
+}
+.head_hot ul a:hover::after{
+    transform: scale3d(1,1,1);
+}
+.head_hot ul li:first-child>a::after{
+    background-color: red;
+}
+
+.head_hot ul li:first-child>a:hover::after{
+    transform: scale3d(1,1,1);
+}
+.head_hot ul a:hover{
+    color: rgb(137, 193, 73);
+}
+.head_hot ul li:first-child>a{
+    color: red;
+    font-weight: 600;
+}
+.head_shoppingcart{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: 40px;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    box-shadow: rgba(0,0,0,.3) 0 0 5px 0;
+    line-height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.head_shoppingcart::before{
+    content: '\e904 ';
+    font-size: 20px;
+    font-family: 'icomoon';
+    color: #e60012;
+    margin-right: 5px;
+    vertical-align:top;
+}
+.head_shoppingcart a{
+    color: black;
+}
+.head_shoppingcart::after{
+    content: '15';
+    display: block;
+    line-height: 14px;
+    top: -13px;
+    left:105px;
+    position: absolute;
+    height: 14px;
+    color:white;
+    background-color: red;
+    border: 2px solid red;
+    padding: 0 2px;
+    /* 用padding挤开盒子 */
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+}
+/* 头部结束 */
+/* <!-- nav开始 --> */
+    .nav{
+    height: 50px;
+    border-bottom: 2px solid red;
+    }
+    .w .dropdown{
+    float: left;
+    width: 250px;
+    height: 50px;
+    background-color: darkred;
+    }
+    .w .dropdown .dt{
+    width: 100%;
+    height: 100%;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    }
+    .w .dropdown .dd{
+    /* display: block; */
+    width: 100%;
+    height: 453px;
+    background-image: url(../picture/73641386_p0.png);
+    background-position: -166px 0px;
+    }
+    .w .dropdown .dd ul li{
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .w .navitem{
+    float: left;
+    line-height: 50px;
+    }
+    .w .navitem a{
+    position: relative;
+    color: black;
+    padding:14.6px 30px;
+    }
+    .w .navitem a:hover{
+        color: #cc844d;
+    }
+/* <!-- nav结束 --> */
+/* 底部开始 */
+.footer{
+    height: 415px;
+    background-color: rgb(255, 255, 255);
+}
+.footer_head{
+    /* overflow: hidden; */
+    border-bottom: 1px solid;
+    height: 100px;
+}
+.footer_head div{
+    margin-top: 15px;
+    box-sizing: border-box; 
+}
+.footer_head>div{
+    /* position: relative; */
+    float: left;
+    width: 200px;
+    height: 70px;
+    margin-right:  calc((1/3)*100px);
+}
+.footer_head>div:first-child{
+    margin-left: calc((1/3)*100px);
+}
+.footer_head .footer_head_img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size:32px 32px;
+    background-image:url(../picture/麗.png);
+    background-repeat: no-repeat;
+    border-radius:50%;
+    margin: 5px;
+}
+.footer_head div h2{
+    margin-top: calc(((70 - 21.2*2)/2)*1px);
+    float: left;
+    font-size: 16px;
+}
+.footer_head div p{
+    float: left;
+}
+.footer_list{
+    /* height: 180px; */
+    overflow: hidden;
+    border-bottom: 1px solid;
+    padding-top: 10px;
+    padding-bottom:10px ;
+}
+.footer_list ul li{
+    float: left;
+    margin: 0 70px;
+}
+.footer_list ul li dt{
+    font-weight: 600;
+    font-size: 20px;
+}
+.footer_bottom{
+    overflow: hidden;
+    
+}
+.footer_bottom div{
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+}
+.footer_bottom .fridendlink ul li{
+    float: left;
+    margin: 20px 0 ;
+    padding: 0 20px ;
+    border-left: 1px solid;
+}
+.footer_bottom .fridendlink ul li:first-child{
+    border-left: 0px;
+}
+/* 底部结束 */
