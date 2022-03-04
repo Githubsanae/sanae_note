@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)_6(69o$ofh(v_2^n%-s@$tzo1b^(y84rua$x72pv9_2*c!f2$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.111']
+ALLOWED_HOSTS = ['104.41.178.55']
 
 
 # Application definition
@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -82,9 +82,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'sanae_note',
-        'USER':'root',
-        'PASSWORD':'123456',
-        'HOST':'127.0.0.1',
+        'USER':'debian-sys-maint',
+        'PASSWORD':'GbBJKhVBdJfliUyM',
+        'HOST':'localhost',
         'PORT':3306
 
     }
