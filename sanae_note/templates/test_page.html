@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页测试</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .mytest{
+            font-size: 32px;
+            color: rgb(67, 189, 245);
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div align='center' class="mytest">
+        <br><br><br>
+        {% for pa in c_page %}
+        {{pa}}
+        <br>
+        {% endfor %}
+        <br>
+        <br>
+        {% if c_page.has_previous %}
+            <a href="/page_test?page={{ c_page.previous_page_number }}">上一页</a>
+        {% else %}
+            上一页
+        {% endif %}
+
+
+        {% for num in p.page_range %}
+        <a href="/page_test?page={{num}}">{{num}}</a>
+        {% endfor %}
+
+
+        {% if c_page.has_next %}
+            <a href="/page_test?page={{ c_page.next_page_number }}">下一页</a>
+        {% else %}
+            下一页
+        {% endif %}
+
+    </div>
+    
+
+</body>
+</html>

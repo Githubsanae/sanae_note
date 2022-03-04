@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>笔记</title>
+    <style>
+        .mytable{
+            margin: 0 auto;
+        }
+        .table_tr{
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <p><a href="/note/add">创建新笔记</a>    <a href="/index">返回首页</a></p>
+        <table class="mytable">
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>创建时间</th>
+                <th>修改时间</th>
+                <th>操作</th>
+            </tr>
+            {% for book in note %}
+                <tr class="table_tr">
+                    <td align="center">{{ book.id }}</td>
+                    <td><a href="/note/page_note/{{book.id}}">{{book.title}}</a></td>
+                    <td>{{book.created_time}}</td>
+                    <td>{{book.updated_time}}</td>
+                    <td>
+    
+                        <a href="">更新</a>
+                        <a href="">删除</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+</body>
+</html>
